@@ -1,0 +1,437 @@
+:root {
+  font-size: 62.5% !important;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+a, p, strong, span {
+  font-family: "Open Sans", sans-serif;
+}
+
+.get-started-button {
+  padding: 1.5rem 5rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border-radius: 4rem;
+}
+
+.get-started-button:hover {
+  background-color: hsl(321, 100%, 78%);
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+p {
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
+.centralize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralize-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.self-centralize {
+  align-self: center;
+  justify-self: center;
+}
+
+.mobile-content {
+  display: inline-block;
+}
+
+.desktop-content {
+  display: none;
+}
+
+@media all and (min-width: 376px) {
+  .desktop-centralize {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .desktop-centralize-column {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mobile-content {
+    display: none !important;
+  }
+  .desktop-content {
+    display: inline-block !important;
+  }
+}
+div[role=header] {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  margin-bottom: 15vh;
+}
+div[role=header] .header-logo-img {
+  width: 15rem;
+}
+div[role=header] .try-it {
+  padding: 0.5rem 2rem;
+  border-radius: 4rem;
+  border: 2px solid hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+  font-size: 1.4rem;
+}
+div[role=header] .try-it:hover {
+  color: hsl(321, 100%, 78%);
+  border: 2px solid hsl(321, 100%, 78%);
+}
+
+@media all and (min-width: 376px) {
+  div[role=header] {
+    padding: 3rem 5rem !important;
+  }
+}
+div[role=main] {
+  width: 100%;
+  margin-bottom: 15vh;
+}
+div[role=main] .level-1 {
+  width: 100%;
+  margin-bottom: 15vh;
+}
+div[role=main] .level-1 h2 {
+  width: 85%;
+  margin-bottom: 2rem;
+}
+div[role=main] .level-1 p {
+  width: 90%;
+  margin-bottom: 3.5rem;
+}
+div[role=main] .level-1 a {
+  margin-bottom: 7rem;
+}
+div[role=main] .level-1 img {
+  width: 90%;
+}
+div[role=main] .level-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+div[role=main] .level-2 .numbers {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 4%;
+  margin-bottom: 10rem;
+}
+div[role=main] .level-2 .numbers img {
+  width: 4rem;
+}
+div[role=main] .level-2 .numbers h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+div[role=main] .level-2 .numbers p {
+  color: hsla(0, 0%, 0%, 0.6);
+}
+div[role=main] .level-3 {
+  width: 100%;
+  position: relative;
+  background-color: hsl(207, 100%, 98%);
+  height: 80vh;
+}
+div[role=main] .level-3 .background {
+  position: absolute;
+  width: 100%;
+}
+div[role=main] .level-3 .top-background-mobile {
+  top: -15%;
+}
+div[role=main] .level-3 .bottom-background-mobile {
+  bottom: -8%;
+}
+div[role=main] .level-3 .level-3-main-img {
+  width: 95%;
+}
+div[role=main] .level-3 h2 {
+  margin: 3rem 0rem 2rem;
+}
+div[role=main] .level-3 p {
+  width: 85%;
+}
+div[role=main] .level-4 {
+  width: 100%;
+  margin: 20vh 0rem;
+}
+div[role=main] .level-4 img {
+  width: 90%;
+}
+div[role=main] .level-4 div {
+  margin-top: 3rem;
+}
+div[role=main] .level-4 div h2 {
+  margin-bottom: 2rem;
+}
+div[role=main] .level-4 div p {
+  width: 65%;
+}
+div[role=main] .level-5 {
+  width: 100%;
+  position: relative;
+  background-color: hsl(207, 100%, 98%);
+  height: 80vh;
+}
+div[role=main] .level-5 .background {
+  position: absolute;
+  width: 100vw;
+}
+div[role=main] .level-5 .top-background-mobile {
+  top: -15%;
+}
+div[role=main] .level-5 .bottom-background-mobile {
+  bottom: -15%;
+}
+div[role=main] .level-5 .level-5-main-img {
+  width: 95%;
+}
+div[role=main] .level-5 div {
+  margin-top: 3rem;
+}
+div[role=main] .level-5 div h2 {
+  margin-bottom: 2rem;
+}
+div[role=main] .level-5 div p {
+  width: 85%;
+}
+div[role=main] .level-6 {
+  width: 100%;
+  margin: 25vh 0rem 20vh;
+}
+div[role=main] .level-6 h2 {
+  margin-bottom: 3rem;
+}
+
+@media all and (min-width: 376px) {
+  div[role=main] .level-1 p {
+    width: 50%;
+  }
+  div[role=main] .level-1 img {
+    width: 65% !important;
+  }
+  div[role=main] .level-2 {
+    flex-direction: row !important;
+    width: 100%;
+    margin-bottom: 35vh;
+  }
+  div[role=main] .level-2 .numbers {
+    margin-bottom: 0% !important;
+  }
+  div[role=main] .level-3 {
+    height: 90vh !important;
+    flex-direction: row-reverse !important;
+    justify-content: center;
+  }
+  div[role=main] .level-3 div {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 3rem;
+    width: 40%;
+  }
+  div[role=main] .level-3 div p {
+    text-align: left;
+  }
+  div[role=main] .level-3 div h2 {
+    text-align: left;
+  }
+  div[role=main] .level-3 .level-3-main-img {
+    width: 45% !important;
+  }
+  div[role=main] .level-3 .top-background-desktop {
+    top: -25%;
+  }
+  div[role=main] .level-3 .bottom-background-desktop {
+    bottom: -15%;
+  }
+  div[role=main] .level-4 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 7rem;
+    height: 90vh;
+    margin: 25vh 0rem !important;
+  }
+  div[role=main] .level-4 img {
+    width: 45%;
+  }
+  div[role=main] .level-4 div {
+    width: 40%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div[role=main] .level-4 div p, div[role=main] .level-4 div h2 {
+    text-align: left !important;
+    width: auto !important;
+  }
+  div[role=main] .level-5 {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0rem;
+  }
+  div[role=main] .level-5 .level-5-main-img {
+    width: 40%;
+    margin-right: 7rem;
+  }
+  div[role=main] .level-5 div {
+    width: 35%;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    margin-left: 7rem;
+  }
+  div[role=main] .level-5 div p, div[role=main] .level-5 div h2 {
+    text-align: left;
+  }
+  div[role=main] .level-5 .top-background-desktop {
+    top: -25%;
+    width: 100% !important;
+  }
+  div[role=main] .level-5 .bottom-background-desktop {
+    bottom: -25%;
+  }
+  div[role=main] .level-6 {
+    margin: 30vh 0rem !important;
+  }
+}
+div[role=footer] {
+  flex-direction: column-reverse;
+  background-color: hsl(192, 100%, 9%);
+  position: relative;
+  padding: 2rem 0rem;
+}
+div[role=footer] p, div[role=footer] h1, div[role=footer] h2, div[role=footer] a, div[role=footer] h3, div[role=footer] h4, div[role=footer] h5 {
+  color: white;
+  text-align: left;
+}
+div[role=footer] .footer-background {
+  position: absolute;
+  width: 100%;
+}
+div[role=footer] .footer-background-mobile {
+  top: -8%;
+}
+div[role=footer] .huddle {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+div[role=footer] .huddle .footer-logo {
+  filter: brightness(0%) invert(100%);
+  margin-bottom: 2rem;
+  width: 15rem;
+}
+div[role=footer] .huddle p {
+  margin-bottom: 2rem;
+}
+div[role=footer] .huddle .phone-number, div[role=footer] .huddle .company-email {
+  margin-bottom: 1.5rem;
+}
+div[role=footer] .huddle .phone-number p, div[role=footer] .huddle .company-email p {
+  margin: 0% 0rem 0rem 1.5rem;
+}
+div[role=footer] .newsletter {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+div[role=footer] .newsletter h2 {
+  margin-bottom: 2rem;
+}
+div[role=footer] .newsletter p {
+  margin-bottom: 1.5rem;
+}
+div[role=footer] .newsletter form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+div[role=footer] .newsletter form input {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: none;
+}
+div[role=footer] .newsletter form button {
+  border-radius: 1rem;
+  padding: 1.5rem 3rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  margin-top: 1.5rem;
+  border: none;
+}
+div[role=footer] .newsletter form button:hover {
+  background-color: hsl(321, 100%, 78%);
+}
+
+@media all and (min-width: 376px) {
+  div[role=footer] {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  div[role=footer] .footer-background-desktop {
+    top: -55%;
+  }
+  div[role=footer] .huddle {
+    grid-column: 2/5;
+  }
+  div[role=footer] .newsletter {
+    grid-column: 6/10;
+  }
+  div[role=footer] .newsletter form {
+    flex-direction: row !important;
+  }
+  div[role=footer] .newsletter form input {
+    margin-right: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+// General Styles
+
+:root {
+    font-size: 62.5% !important;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a, p, strong, span {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.get-started-button {
+    padding: 1.5rem 5rem;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 4rem;
+}
+
+.get-started-button:hover {
+    background-color: hsl(321, 100%, 78%);
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+p {
+    color: #000;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+a {
+    font-size: 1.5rem;
+}
+
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centralize-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.self-centralize {
+    align-self: center;
+    justify-self: center;
+}
+
+.mobile-content {
+    display: inline-block;
+}
+
+.desktop-content {
+    display: none;
+}
+
+
+
+@media all and (min-width:376px) {
+    .desktop-centralize {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .desktop-centralize-column {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mobile-content {
+        display: none !important;
+    }
+    
+    .desktop-content {
+        display: inline-block !important;
+    }
+    
+}
+
+@import 'header';
+@import 'body';
+@import 'footer';

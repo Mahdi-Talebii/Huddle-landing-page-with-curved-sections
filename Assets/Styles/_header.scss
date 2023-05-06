@@ -1,0 +1,34 @@
+// Header Styles
+
+div[role=header] {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    margin-bottom: 15vh;
+
+    .header-logo-img {
+        width: 15rem;
+    }
+
+    .try-it {
+        padding: 0.5rem 2rem;
+        border-radius: 4rem;
+        border: 2px solid hsl(322, 100%, 66%);
+        color: hsl(322, 100%, 66%);
+        font-size: 1.4rem;
+    }
+
+    .try-it:hover {
+        color: hsl(321, 100%, 78%);
+        border: 2px solid hsl(321, 100%, 78%);
+    }
+
+}
+
+@media all and (min-width:376px) {
+    div[role=header] {
+        padding: 3rem 5rem !important;
+    }
+}

@@ -1,0 +1,284 @@
+// Main body styles
+
+div[role=main] {
+    width: 100%;
+    margin-bottom: 15vh;
+
+
+    .level-1 {
+        width: 100%;
+        margin-bottom: 15vh;
+
+        h2 {
+            width: 85%;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            width: 90%;
+            margin-bottom: 3.5rem;
+        }
+
+        a {
+            margin-bottom: 7rem;
+        }
+
+        img {
+            width: 90%;
+        }
+    }
+
+    .level-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-bottom: 10vh;
+
+        .numbers {
+            display: grid;
+            grid-auto-flow: row;
+            row-gap: 4%;
+            margin-bottom: 10rem;
+
+            img {
+                width: 4rem;
+            }
+
+
+            h3 {
+                font-size: 5rem;
+                text-align: center;
+            }
+
+            p {
+                color: hsla(0, 0, 0, 0.6);
+            }
+
+
+        }
+    }
+
+    .level-3 {
+        width: 100%;
+        position: relative;
+        background-color: hsl(207, 100%, 98%);
+        height: 80vh;
+        
+        .background {
+            position: absolute;
+            width: 100%;
+        }
+
+        .top-background-mobile {
+            top: -15%;
+        }
+
+        .bottom-background-mobile {
+            bottom: -8%;
+        }
+        
+        .level-3-main-img {
+            width: 95%;
+        }
+
+        h2 {
+            margin: 3rem 0rem 2rem;
+        }
+
+        p {
+            width: 85%;
+        }
+
+    }
+
+    .level-4 {
+        width: 100%;
+        margin: 20vh 0rem;
+
+        img {
+            width: 90%;
+        }
+        
+        div {
+             margin-top: 3rem;   
+            
+             h2 {
+                margin-bottom: 2rem;
+            }
+
+            p {
+                width: 65%;
+            }
+        }
+    }
+
+    .level-5 {
+        width: 100%;
+        position: relative;
+        background-color: hsl(207, 100%, 98%);
+        height: 80vh;
+
+        .background {
+            position: absolute;
+            width: 100vw;
+        }
+        
+
+        .top-background-mobile {
+            top: -15%;
+        }
+
+        .bottom-background-mobile {
+            bottom: -15%;
+        }
+
+        .level-5-main-img {
+            width: 95%;
+        }
+
+        div {
+            margin-top: 3rem;
+            h2 {
+                margin-bottom: 2rem;
+            }
+
+            p {
+                width: 85%;
+            }
+        }
+    }
+
+    .level-6 {
+        width: 100%;
+        margin: 25vh 0rem 20vh;
+
+        h2 {
+            margin-bottom: 3rem;
+        }
+    }
+
+}
+
+@media all and (min-width:376px) {
+    div[role=main] {
+
+        .level-1 {
+            p {
+                width: 50%;
+            }
+
+            img {
+                width: 65% !important;
+            }
+        }
+
+        .level-2 {
+            flex-direction: row !important;
+            width: 100%;
+            margin-bottom: 35vh;
+
+            .numbers {
+                margin-bottom: 0% !important;
+            }
+        }
+
+        .level-3 {
+            height: 90vh !important;
+            flex-direction: row-reverse !important;
+            justify-content: center;
+            
+            div {
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-right: 3rem;
+                width: 40%;
+
+                p {
+                    text-align: left;
+
+                }
+
+                h2 {
+                    text-align: left;
+
+                }
+            }
+
+
+            .level-3-main-img {
+                width: 45% !important;
+            }
+
+            .top-background-desktop {
+                top: -25%;
+            }
+
+            .bottom-background-desktop {
+                bottom: -15%;
+            }
+
+        }
+
+        .level-4 {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0rem 7rem;
+            height: 90vh;
+            margin: 25vh 0rem !important;
+            
+            img {
+                width: 45%;
+            }
+
+            div {
+                width: 40%;
+                justify-content: flex-start;
+                align-items: flex-start;
+                
+                
+                p ,h2 {
+                    text-align: left !important;
+                    width: auto !important;
+                }
+            }
+        }
+
+        .level-5 {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding: 0rem;
+            
+            .level-5-main-img {
+                width: 40%;
+                margin-right: 7rem;
+            }
+
+            div {
+                width: 35%;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                margin-left: 7rem;
+
+                p, h2 {
+                    text-align: left;
+                }
+            }
+
+            .top-background-desktop {
+                top: -25%;
+                width: 100% !important;
+            }
+
+            .bottom-background-desktop {
+                bottom: -25%;
+            }
+        }
+
+        .level-6 {
+            margin: 30vh 0rem !important;
+        }
+
+        
+    }
+}
